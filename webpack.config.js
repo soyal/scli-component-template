@@ -4,10 +4,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'fs-editor.js',
+        filename: 'index.js',
         publicPath: "/dist/",
         path: path.resolve(__dirname, "dist"),
-        library: 'fs-editor',
+        library: 'foo',
         libraryTarget: 'umd'
     },
     module: {
@@ -35,29 +35,16 @@ module.exports = {
     //     react: 'React'
     // }
     externals: {
-        react: {
+        'react': {
             root: 'React',
             commonjs: 'react',
             commonjs2: 'react',
             amd: 'react'
         },
-        'draft-js': {
-          root: 'Draftjs',
-          commonjs: 'draft-js',
-          commonjs2: 'draft-js',
-          amd: 'draft-js'
-        },
-        'prop-types': {
-          root: 'PropTypes',
-          commonjs: 'prop-types',
-          commonjs2: 'prop-types',
-          amd: 'prop-types'
-        },
-        '@fs/noty': {
-          root: 'Noty',
-          commonjs: '@fs/noty',
-          commonjs2: '@fs/noty',
-          amd: '@fs/noty'
+        'react-dom': {
+          commonjs: 'react-dom',
+          commonjs2: 'react-dom',
+          amd: 'react-dom'
         }
     }
 }
