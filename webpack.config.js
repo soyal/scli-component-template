@@ -28,7 +28,7 @@ module.exports = {
     devtool: 'source-map',
 
     plugins: [
-        new ExtractTextPlugin('fs-editor.css')
+        new ExtractTextPlugin('index.css')
     ],
 
     // externals: {
