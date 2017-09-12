@@ -6,8 +6,7 @@ storybook: https://github.com/storybooks/storybook
 ## 使用
 修改package.json中的描述信息相关的字段  
 ```
-npm install
-getstorybook
+yarn
 npm run storybook
 ```
 之后请参考storybook的相关文档  
