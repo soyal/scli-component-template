@@ -14,5 +14,5 @@ npm run storybook
 ## 发布
 
 ```
-npm publish
+npm publish --registry=http://npm.fishsaying.com
 ```
