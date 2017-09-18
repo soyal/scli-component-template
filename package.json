@@ -1,6 +1,6 @@
 {
-  "name": "react-component",
-  "version": "1.0.0",
+  "name": "{{componentName}}",
+  "version": "{{version}}",
   "description": "a template of react component",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "",
+  "author": "{{author}}",
   "license": "ISC",
   "dependencies": {
     "react": "^15.6.1",

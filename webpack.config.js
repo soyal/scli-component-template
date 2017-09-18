@@ -7,7 +7,7 @@ module.exports = {
         filename: 'index.js',
         publicPath: "/dist/",
         path: path.resolve(__dirname, "dist"),
-        library: 'foo',
+        library: '{{componentName}}',
         libraryTarget: 'umd'
     },
     module: {
