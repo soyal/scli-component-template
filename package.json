@@ -24,6 +24,10 @@
     "webpack": "^3.5.5",
     "@storybook/react": "^3.2.8",
     "@storybook/addon-actions": "^3.2.6",
-    "@storybook/addon-links": "^3.2.6"
+    "@storybook/addon-links": "^3.2.6",
+    "css-loader": "^0.28.7",
+    "less-loader": "^4.0.5",
+    "postcss-flexbugs-fixes": "^3.2.0",
+    "style-loader": "^0.18.2"
   }
 }
