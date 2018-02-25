@@ -1,5 +1,6 @@
 const path = require("path")
 const autoprefixer = require('autoprefixer')
+const config = require('./config')
 
 module.exports = {
     entry: './src/index.js',
@@ -56,17 +57,18 @@ module.exports = {
     },
     devtool: 'source-map',
 
-    externals: {
-        'react': {
-            root: 'React',
-            commonjs: 'react',
-            commonjs2: 'react',
-            amd: 'react'
-        },
-        'react-dom': {
-          commonjs: 'react-dom',
-          commonjs2: 'react-dom',
-          amd: 'react-dom'
+    externals: _externals()
+}
+
+function _externals() {
+    const exs = {}
+    config.externals.forEach(ex => {
+        exs[ex] = {
+          commonjs: ex,
+          commonjs2: ex,
+          amd: ex
         }
-    }
+    })
+
+    return exs
 }
